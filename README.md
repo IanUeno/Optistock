@@ -1,7 +1,3 @@
-# Opsistock
-
-Copie o código abaixo e cole no seu arquivo README.md.
-Markdown
 #  OptiStock Enterprise
 
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen?style=flat-square)
