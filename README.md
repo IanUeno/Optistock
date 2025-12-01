@@ -63,20 +63,44 @@ cd C:\Users\Pichau\Desktop\optistock\frontend
 
 ## Estrutura do Projeto
 ```
-Plaintext
-/
+OptiStock/
 ├── backend/
 │   ├── app/
-│   │   ├── main.py          # Entry point da API
-│   │   ├── clean_engine.py  # Motor matemático & Processamento do CSV
-│   │   └── database.py      # Conexão SQLite
-│   └── data/
-│       └── OnlineRetail.csv # Dataset Transacional
+│   │   ├── __init__.py
+│   │   ├── main.py              # Ponto de entrada da API
+│   │   ├── models.py            # Modelos de dados (se houver)
+│   │   ├── routes.py            # Rotas da API
+│   │   └── utils.py             # Funções auxiliares
+│   │
+│   ├── data/
+│   │   └── OnlineRetail.csv     # Base de dados usada para cálculos
+│   │
+│   ├── OnlineRetail.csv         # (parece duplicado — confirmar)
+│   ├── requirements.txt         # Dependências do Python
+│   ├── package.json             # Se estiver usando Node para algo
+│   └── package-lock.json
+│
 ├── frontend/
+│   ├── public/
+│   │   ├── index.html           # Template principal
+│   │   └── favicon.ico
+│   │
 │   ├── src/
-│   │   ├── components/      # Componentes UI (Cards, Gráficos)
-│   │   └── App.js           # Lógica da Interface
-└── README.md
+│   │   ├── components/          # Componentes React
+│   │   │   ├── Header.jsx
+│   │   │   ├── Card.jsx
+│   │   │   └── Chart.jsx
+│   │   ├── App.jsx              # Lógica da aplicação
+│   │   └── main.jsx             # Ponto de entrada do React
+│   │
+│   ├── tailwind.config.js       # Configuração do Tailwind
+│   ├── postcss.config.js
+│   ├── package.json             # Dependências do Frontend
+│   └── README.md
+│
+└── docs/
+    └── (vazio – disponível para documentação futura)
+
 ```
 
 Validação com Dados Reais
